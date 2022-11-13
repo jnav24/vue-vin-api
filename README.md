@@ -1,11 +1,4 @@
-# Vue Heroes
-
-Docker is also set up for this. Run the following:
-
-```
-docker-compose build
-docker-compose up
-```
+# Vue Vin API
 
 ## Project setup
 ```
@@ -22,19 +15,9 @@ npm run serve
 npm run build
 ```
 
-### Run your tests
-```
-npm run test
-```
-
 ### Lints and fixes files
 ```
 npm run lint
-```
-
-### Run your unit tests
-```
-npm run test:unit
 ```
 
 ### Customize configuration
