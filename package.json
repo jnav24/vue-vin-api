@@ -10,12 +10,12 @@
   "dependencies": {
     "vue": "^2.6.10",
     "vue-query": "^1.26.0",
-    "vuetify": "2.0.0"
+    "vuetify": "2.6.12"
   },
   "devDependencies": {
     "@vue/cli-plugin-typescript": "^3.11.0",
     "@vue/cli-service": "^3.11.0",
-    "sass": "^1.17.4",
+    "sass": "~1.32.0",
     "sass-loader": "^7.1.0",
     "typescript": "^3.4.3",
     "vue-cli-plugin-vuetify": "^0.6.3",
