@@ -63,7 +63,7 @@
 
 	interface DataType {
 		form: VehicleData;
-		years: Array<string>
+		years: string[];
 	}
 
 	export default Vue.extend({
@@ -75,7 +75,9 @@
 			years: [],
 		}),
 		methods: {
-			handleDelete() {},
+			handleDelete() {
+				alert('deleting...');
+			},
 		},
 		mounted() {
 			const currentYear = new Date().getFullYear();
@@ -85,9 +87,9 @@
 			}
 		},
 		watch: {
-			data: function (nv: VehicleData, _ov: VehicleData) {
+			data(nv: VehicleData) {
 				this.form = nv;
 			},
-		}
+		},
 	});
 </script>
