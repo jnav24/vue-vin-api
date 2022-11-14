@@ -8,7 +8,7 @@
 				<v-expansion-panel-header>
 					<v-layout align-center justify-space-between>
 						1. {{ form.vin }}
-						<v-btn color="primary" text>Delete</v-btn>
+						<v-btn color="primary" text @click.native.stop="handleDelete">Delete</v-btn>
 					</v-layout>
 				</v-expansion-panel-header>
 				<v-expansion-panel-content color="#E3F2FD" style="padding-top: 1em">
@@ -74,6 +74,9 @@
 			form: null,
 			years: [],
 		}),
+		methods: {
+			handleDelete() {},
+		},
 		mounted() {
 			const currentYear = new Date().getFullYear();
 
