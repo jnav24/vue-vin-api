@@ -3,7 +3,7 @@
 		<v-container>
 			<v-card>
 				<v-card-title
-					:style="{ color: this.$vuetify.theme.themes.light.primary }"
+					:style="{ color: $vuetify.theme.themes.light.primary }"
 				>
 					1. Add Vehicles
 				</v-card-title>
@@ -18,7 +18,7 @@
 					</v-tab>
 				</v-tabs>
 				<v-tabs-items v-model="currentTab">
-					<v-tab-item value="single-vin">hello</v-tab-item>
+					<v-tab-item value="single-vin"><SingleVin></SingleVin></v-tab-item>
 				</v-tabs-items>
 			</v-card>
 		</v-container>
@@ -27,18 +27,19 @@
 
 <script lang="ts">
 	import Vue from 'vue';
+	import SingleVin from '@/components/SingleVin.vue';
 
 	export default Vue.extend({
 		name: 'App',
-		components: {},
+		components: { SingleVin },
 		data: () => ({
 			currentTab: 'single-vin',
 			tabs: ['Single Vin', 'Bulk Vin', 'Manual Entry'],
 		}),
 		methods: {
 			setValue(tab: string) {
-				return tab.toLowerCase().replace(/\s+/, '-')
-			}
+				return tab.toLowerCase().replace(/\s+/, '-');
+			},
 		},
 	});
 </script>
